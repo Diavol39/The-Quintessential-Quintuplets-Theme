@@ -17,23 +17,23 @@
 
   /* ===== ACCENT ===== */
 
-  --main-color: #9a7cff;
-  --hover-color: #c0adff;
+  --main-color: #5b4bb7;
+  --hover-color: #7b68d1;
 
-  --success-color: #7bdca8;
-  --danger-color: #ff6878;
+  --success-color: #2f9e6d;
+  --danger-color: #d94b68;
 
   /* ===== STATUS ===== */
 
   --online-color: #43b581;
   --idle-color: #faa61a;
   --dnd-color: #f04747;
-  --streaming-color: #b56cff;
+  --streaming-color: #8b4fd3;
   --offline-color: #808080;
 
   /* ===== BACKGROUND ===== */
 
-  --background-image: url("https://github.com/Diavol39/The-Quintessential-Quintuplets-Theme/blob/b6d608fb1f3881f2e55ca58a687691fa8c44a680/The%20Quintessential%20Quintuplets%20Wallpaper.png?raw=true");
+  --background-image: url("https://github.com/Diavol39/The-Quintessential-Quintuplets-Theme/blob/main/The%20Quintessential%20Quintuplets%20Wallpaper.png?raw=true);
 
   --background-position: center top;
   --background-size: cover;
@@ -78,13 +78,13 @@
 
   --channel-normal: var(--interactive-text-default);
   --channel-muted: var(--interactive-muted);
-  --channel-hover: white;
-  --channel-selected: white;
+  --channel-hover: #171326;
+  --channel-selected: #171326;
 
-  --channel-selected-bg: rgba(154,124,255,.28);
+  --channel-selected-bg: rgba(123,104,209,.22);
 
-  --channel-unread: #d9d0ff;
-  --channel-unread-hover: white;
+  --channel-unread: #5145a8;
+  --channel-unread-hover: #171326;
 
   --focus-color: var(--main-color);
 
@@ -96,14 +96,14 @@
 
 :is(.theme-light,.theme-dark .theme-light){
 
-    --background-shading: rgba(10,7,20,.05);
-    --card-shading: rgba(10,7,20,.07);
-    --popout-shading: rgba(10,7,20,.16);
-    --modal-shading: rgba(10,7,20,.12);
-    --input-shading: rgba(0,0,0,.08);
+    --background-shading: rgba(24,18,42,.025);
+    --card-shading: rgba(255,255,255,.20);
+    --popout-shading: rgba(255,255,255,.52);
+    --modal-shading: rgba(255,255,255,.42);
+    --input-shading: rgba(255,255,255,.28);
 
-    --normal-text:#30263d;
-    --muted-text:#665c76;
+    --normal-text:#171326;
+    --muted-text:#4d465b;
 }
 
 /* ========================= */
@@ -112,18 +112,18 @@
 
 :is(.theme-dark,.theme-light .theme-dark){
 
-    --background-shading: rgba(10,7,20,.05);
+    --background-shading: rgba(18,14,32,.025);
 
-    --card-shading: rgba(10,7,20,.07);
+    --card-shading: rgba(255,255,255,.16);
 
-    --popout-shading: rgba(10,7,20,.16);
+    --popout-shading: rgba(255,255,255,.46);
 
-    --modal-shading: rgba(10,7,20,.12);
+    --modal-shading: rgba(255,255,255,.36);
 
-    --input-shading: rgba(255,255,255,.035);
+    --input-shading: rgba(255,255,255,.24);
 
-    --normal-text:#fff9ff;
-    --muted-text:#d0c6df;
+    --normal-text:#171326;
+    --muted-text:#4d465b;
 }
 
 /* ========================= */
@@ -132,18 +132,18 @@
 
 :is(.theme-darker,.theme-light .theme-darker){
 
-    --background-shading: rgba(10,7,20,.10);
+    --background-shading: rgba(18,14,32,.045);
 
-    --card-shading: rgba(10,7,20,.12);
+    --card-shading: rgba(255,255,255,.20);
 
-    --popout-shading: rgba(10,7,20,.22);
+    --popout-shading: rgba(255,255,255,.50);
 
-    --modal-shading: rgba(10,7,20,.18);
+    --modal-shading: rgba(255,255,255,.40);
 
-    --input-shading: rgba(255,255,255,.035);
+    --input-shading: rgba(255,255,255,.27);
 
-    --normal-text:#ffffff;
-    --muted-text:#d0c6df;
+    --normal-text:#171326;
+    --muted-text:#4d465b;
 }
 
 /* ========================= */
@@ -152,18 +152,18 @@
 
 :is(.theme-midnight,.theme-light .theme-midnight){
 
-    --background-shading: rgba(10,7,20,.14);
+    --background-shading: rgba(18,14,32,.06);
 
-    --card-shading: rgba(10,7,20,.16);
+    --card-shading: rgba(255,255,255,.22);
 
-    --popout-shading: rgba(10,7,20,.28);
+    --popout-shading: rgba(255,255,255,.54);
 
-    --modal-shading: rgba(10,7,20,.22);
+    --modal-shading: rgba(255,255,255,.44);
 
-    --input-shading: rgba(255,255,255,.05);
+    --input-shading: rgba(255,255,255,.30);
 
-    --normal-text:#ffffff;
-    --muted-text:#d0c6df;
+    --normal-text:#171326;
+    --muted-text:#4d465b;
 }
 
 /* ========================= */
@@ -175,6 +175,8 @@
 [class*="message"]{
     border-radius:12px;
     margin:2px 8px;
+    background: rgba(255,255,255,.14);
+    text-shadow: 0 1px 2px rgba(255,255,255,.55);
 }
 
 /* Glass text box */
@@ -226,11 +228,11 @@
     font-weight: 800;
     letter-spacing: 1px;
 
-    color: #ffffff;
+    color: #171326;
 
     text-shadow:
-        0 0 4px rgba(255,255,255,.45),
-        0 0 10px rgba(255,150,205,.38);
+        0 1px 2px rgba(255,255,255,.80),
+        0 0 6px rgba(255,255,255,.45);
 
     font-family:
         "Yu Gothic UI",
@@ -244,7 +246,7 @@
     content: "THE QUINTESSENTIAL QUINTUPLETS";
 
     position: absolute;
-    left: 150px;
+    left: 0px;
     top: 25px;
 
     font-size: 10px;
@@ -252,7 +254,7 @@
 
     letter-spacing: 5px;
 
-    color: rgba(255,255,255,.65);
+    color: rgba(23,19,38,.72);
 }
 
 /* Remove ClearVision version text */
@@ -281,5 +283,5 @@
 
     letter-spacing: 2px;
 
-    color: rgba(255,255,255,.55);
+    color: rgba(23,19,38,.68);
 }   
