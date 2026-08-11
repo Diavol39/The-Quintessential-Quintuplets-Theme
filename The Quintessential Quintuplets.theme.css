@@ -1,0 +1,287 @@
+/**
+ * @name The Quintessential Quintuplets Theme
+ * @author Diavol39
+ * @version 1.0.0
+ * @description The Quintessential Quintuplets theme featuring the Nakano sisters
+ */
+
+/* IMPORTS */
+@import url("https://clearvision.github.io/ClearVision-v7/main.css");
+@import url("https://clearvision.github.io/ClearVision-v7/vencord.css");
+
+/* ========================= */
+/*          SETTINGS         */
+/* ========================= */
+
+:root {
+
+  /* ===== ACCENT ===== */
+
+  --main-color: #5b4bb7;
+  --hover-color: #7b68d1;
+
+  --success-color: #2f9e6d;
+  --danger-color: #d94b68;
+
+  /* ===== STATUS ===== */
+
+  --online-color: #43b581;
+  --idle-color: #faa61a;
+  --dnd-color: #f04747;
+  --streaming-color: #8b4fd3;
+  --offline-color: #808080;
+
+  /* ===== BACKGROUND ===== */
+
+  --background-image: url("https://github.com/Diavol39/The-Quintessential-Quintuplets-Theme/blob/main/The%20Quintessential%20Quintuplets%20Wallpaper.png?raw=true");
+
+  --background-position: center top;
+  --background-size: cover;
+  --background-attachment: fixed;
+
+  --background-filter:
+      brightness(1.0)
+      saturate(1.05)
+      contrast(1.0);
+
+  /* ===== TRANSPARENCY ===== */
+
+  --background-shading-percent: 0%;
+
+  /* ===== USER POPOUT ===== */
+
+  --user-popout-image: var(--background-image);
+  --user-popout-position: center;
+  --user-popout-size: cover;
+  --user-popout-attachment: fixed;
+  --user-popout-filter: brightness(.86);
+
+  /* ===== USER MODAL ===== */
+
+  --user-modal-image: var(--background-image);
+  --user-modal-position: center;
+  --user-modal-size: cover;
+  --user-modal-attachment: fixed;
+  --user-modal-filter: brightness(.86);
+
+  /* ===== HOME ICON ===== */
+
+  --home-icon: url("https://clearvision.github.io/icons/discord.svg");
+  --home-size: cover;
+
+  /* ===== FONTS ===== */
+
+  --main-font: "gg sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --code-font: Consolas,"gg mono",monospace;
+
+  /* ===== CHANNELS ===== */
+
+  --channel-normal: var(--interactive-text-default);
+  --channel-muted: var(--interactive-muted);
+  --channel-hover: #171326;
+  --channel-selected: #171326;
+
+  --channel-selected-bg: rgba(123,104,209,.22);
+
+  --channel-unread: #5145a8;
+  --channel-unread-hover: #171326;
+
+  --focus-color: var(--main-color);
+
+}
+
+/* ========================= */
+/*       LIGHT THEME         */
+/* ========================= */
+
+:is(.theme-light,.theme-dark .theme-light){
+
+    --background-shading: rgba(24,18,42,.025);
+    --card-shading: rgba(255,255,255,.20);
+    --popout-shading: rgba(255,255,255,.52);
+    --modal-shading: rgba(255,255,255,.42);
+    --input-shading: rgba(255,255,255,.28);
+
+    --normal-text:#171326;
+    --muted-text:#4d465b;
+}
+
+/* ========================= */
+/*        DARK THEME         */
+/* ========================= */
+
+:is(.theme-dark,.theme-light .theme-dark){
+
+    --background-shading: rgba(18,14,32,.025);
+
+    --card-shading: rgba(255,255,255,.16);
+
+    --popout-shading: rgba(255,255,255,.46);
+
+    --modal-shading: rgba(255,255,255,.36);
+
+    --input-shading: rgba(255,255,255,.24);
+
+    --normal-text:#171326;
+    --muted-text:#4d465b;
+}
+
+/* ========================= */
+/*       DARKER THEME        */
+/* ========================= */
+
+:is(.theme-darker,.theme-light .theme-darker){
+
+    --background-shading: rgba(18,14,32,.045);
+
+    --card-shading: rgba(255,255,255,.20);
+
+    --popout-shading: rgba(255,255,255,.50);
+
+    --modal-shading: rgba(255,255,255,.40);
+
+    --input-shading: rgba(255,255,255,.27);
+
+    --normal-text:#171326;
+    --muted-text:#4d465b;
+}
+
+/* ========================= */
+/*       MIDNIGHT            */
+/* ========================= */
+
+:is(.theme-midnight,.theme-light .theme-midnight){
+
+    --background-shading: rgba(18,14,32,.06);
+
+    --card-shading: rgba(255,255,255,.22);
+
+    --popout-shading: rgba(255,255,255,.54);
+
+    --modal-shading: rgba(255,255,255,.44);
+
+    --input-shading: rgba(255,255,255,.30);
+
+    --normal-text:#171326;
+    --muted-text:#4d465b;
+}
+
+/* ========================= */
+/*     EXTRA CUSTOM CSS      */
+/* ========================= */
+
+/* Rounded messages */
+
+[class*="message"]{
+    border-radius:12px;
+    margin:2px 8px;
+    background: rgba(255,255,255,.14);
+    text-shadow: 0 1px 2px rgba(255,255,255,.55);
+}
+
+/* Glass text box */
+
+[class*="channelTextArea"]{
+    backdrop-filter:blur(0px);
+}
+
+/* Glass sidebars */
+
+[class*="sidebar"]{
+    backdrop-filter:blur(0px);
+}
+
+[class*="membersWrap"]{
+    backdrop-filter:blur(0px);
+}
+
+/* Smooth animations */
+
+*{
+    transition:
+        background-color .18s ease,
+        border-color .18s ease,
+        color .18s ease;
+}
+
+/* ========================= */
+/*          Title            */
+/* ========================= */
+
+/* ==========================================
+   The Quintessential Quintuplets Logo
+   ========================================== */
+
+.leading_c38106 {
+    position: relative;
+}
+
+/* Main Japanese title */
+.leading_c38106::before {
+    content: "『五等分の花嫁』" !important;
+
+    position: absolute;
+    left: 5px;
+    top: 15px;
+
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    color: #171326;
+
+    text-shadow:
+        0 1px 2px rgba(255,255,255,.80),
+        0 0 6px rgba(255,255,255,.45);
+
+    font-family:
+        "Yu Gothic UI",
+        "Yu Gothic",
+        "Meiryo",
+        sans-serif;
+}
+
+/* English subtitle */
+.title_c38106::before {
+    content: "THE QUINTESSENTIAL QUINTUPLETS";
+
+    position: absolute;
+    left: 30px;
+    top: 25px;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 5px;
+
+    color: rgba(23,19,38,.72);
+}
+
+/* Remove ClearVision version text */
+.leading_c38106 span,
+.leading_c38106::after,
+.leading_c38106 * {
+    text-shadow: inherit;
+}
+
+/* Hide the 7.0.1 version */
+.leading_c38106 > div::after,
+.leading_c38106::after {
+    content: "" !important;
+}
+
+/* Small Theme text */
+.leading_c38106::after {
+    content: "テーマ" !important;
+
+    position: absolute;
+
+    left: 190px;
+    top: 15px;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: rgba(23,19,38,.68);
+}   
